@@ -50,13 +50,14 @@ header{
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_medium.jpg);
 
     /* background-color: black; */
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-size:cover; 
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
+    padding-block: 80px;
 
 }
 header::before{
@@ -218,7 +219,33 @@ main{
     z-index: 1;
 }
 
+.faq-section{
+    border-top: 7px solid rgb(62, 62, 62);
+    width: 100%;
+    color: white;
+    /* height: 220px; */
+    padding-block: 100px;
+    padding-inline: 80px;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
 
+}
+
+.faq-section details{
+    background-color: #2d2d2d;
+}
+
+.faq-section summary{
+    padding: 20px 30px;
+}
+.faq-section P{
+    padding: 20px 30px;
+}
 
 
 
