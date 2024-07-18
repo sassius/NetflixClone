@@ -137,7 +137,35 @@ header::before{
     background-color: rgb(174, 0, 0);
 }
 
-
+.page{
+    height: 70vh;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-top: 10px solid gray;
+    border-bottom: 10px solid gray;
+}
+.page-content{
+    width: 55%;
+}
+.page h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.page p{
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.image{
+    height: 100%;
+    overflow: hidden;
+}
+.image img{
+    height: 400px;
+}
 
 
 
