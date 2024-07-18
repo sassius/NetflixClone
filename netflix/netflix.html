@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="netflix.css" />
   </head>
   <body>
-    <header>
+    <header class="flex">
       <!-- <div class="box"></div> -->
-      <nav id="navbar">
+      <nav id="navbar" class="container">
         <div class="logo">
           <img width="180" src="assets/Netflix_Logo_PMS.png" alt="" />
         </div>
@@ -31,90 +31,115 @@
           Ready to watch? Enter your email to create or restart your membership.
         </p>
         <div class="email-button">
-            <input type="email" name="mail" id="mail" placeholder="Email address" />
-        <button type="button" class="redButton">Get Started</button>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="Email address"
+          />
+          <button type="button" class="redButton">Get Started</button>
         </div>
-    </div>
+      </div>
     </header>
     <main>
-        <div class="page">
-            <div class="page-content">
-                <h1>Enjoy on your TV</h1>
-                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
-            </div>
-            <div class="image">
-                <img   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="">
-            </div>
+      <div class="page">
+        <div class="page-content">
+          <h1>Enjoy on your TV</h1>
+          <p>
+            Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray
+            players and more.
+          </p>
         </div>
-        <div class="page">
-            
-            <div class="image">
-                <img   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="">
-            </div>
-            <div class="page-content">
-                <h1>Download your shows to watch offline</h1>
-                <p>Save your favourites easily and always have something to watch.</p>
-            </div>
+        <div class="image">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+            alt=""
+          />
+          <video
+            class="v1"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+            loop
+            mute
+            autoplay
+          ></video>
         </div>
-        <div class="page">
-            <div class="page-content">
-                <h1>Watch everywhere</h1>
-                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
-            </div>
-            <div class="image">
-                <img   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png" alt="">
-            </div>
+      </div>
+      <div class="page">
+        <div class="image">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+            alt=""
+          />
         </div>
-        <div class="page">
-            
-            <div class="image">
-                <img   src="assets/asset 0.png" alt="">
-            </div>
-            <div class="page-content">
-                <h1>Create profiles for kids</h1>
-                <p>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
-            </div>
+        <div class="page-content">
+          <h1>Download your shows to watch offline</h1>
+          <p>Save your favourites easily and always have something to watch.</p>
         </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h1>Watch everywhere</h1>
+          <p>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+            alt=""
+          />
+          <!-- <video class="v2" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" loop muted autoplay></video> -->
+        </div>
+      </div>
+      <div class="page">
+        <div class="image">
+          <img src="assets/asset 0.png" alt="" />
+        </div>
+        <div class="page-content">
+          <h1>Create profiles for kids</h1>
+          <p>
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </p>
+        </div>
+      </div>
     </main>
 
+    <!-- ========================samar area========================== -->
 
-<!-- ========================samar area========================== -->
-
-
-    
     <footer id="footer">
-      <h5>Questions? Call 000-800-919-1694</h5>
+      <p>Questions? Call 000-800-919-1694</p>
       <div class="Footer_div_main">
-        <div class="Footer_div_1st">
-          <div>
-            <a href="#" class="footer_link">FAQ</a>
-            <a href="#" class="footer_link">Investot Relations</a>
-            <a href="#" class="footer_link">Privacy</a>
-            <a href="#" class="footer_link">Speed Test</a>
+        <div class="Footer_div">
+          <a href="#" class="footer_link">FAQ</a>
+          <a href="#" class="footer_link">Investot Relations</a>
+          <a href="#" class="footer_link">Privacy</a>
+          <a href="#" class="footer_link">Speed Test</a>
+          <div class="language">
+            <select name="lang" id="lang">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+            </select>
           </div>
+          <p class="copy-right">Netflix India </p>
         </div>
-        <div class="Footer_div_2nd">
-          <div>
-            <a href="#" class="footer_link">Help Center</a>
-            <a href="#" class="footer_link">Jobs</a>
-            <a href="#" class="footer_link">Cookie Preferences</a>
-            <a href="#" class="footer_link">Legal Notices</a>
-          </div>
+        <div class="Footer_div">
+          <a href="#" class="footer_link">Help Center</a>
+          <a href="#" class="footer_link">Jobs</a>
+          <a href="#" class="footer_link">Cookie Preferences</a>
+          <a href="#" class="footer_link">Legal Notices</a>
         </div>
-        <div class="Footer_div_3rd">
-          <div>
-            <a href="#" class="footer_link">Account</a>
-            <a href="#" class="footer_link">Ways to Watch</a>
-            <a href="#" class="footer_link">Corporate Information</a>
-            <a href="#" class="footer_link">Only to Netflix </a>
-          </div>
+        <div class="Footer_div">
+          <a href="#" class="footer_link">Account</a>
+          <a href="#" class="footer_link">Ways to Watch</a>
+          <a href="#" class="footer_link">Corporate Information</a>
+          <a href="#" class="footer_link">Only to Netflix </a>
         </div>
-        <div class="Footer_div_4th">
-          <div>
-            <a href="#" class="footer_link">Media Center</a>
-            <a href="#" class="footer_link">Terms of Use</a>
-            <a href="#" class="footer_link">Contact Us</a>
-          </div>
+        <div class="Footer_div">
+          <a href="#" class="footer_link">Media Center</a>
+          <a href="#" class="footer_link">Terms of Use</a>
+          <a href="#" class="footer_link">Contact Us</a>
         </div>
       </div>
     </footer>

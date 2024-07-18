@@ -9,7 +9,23 @@
 a{
     font-family: "Poppins", sans-serif;
 }
-
+body{
+    background-color: rgb(46, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1800px;
+}
 #navbar{
     display: flex;
     justify-content: space-between;
@@ -25,17 +41,20 @@ a{
 nav{
     position: relative;
     z-index: 9;
+    width: 100%;
 }
 header{
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/5ff265b6-3037-44b2-b071-e81750b21783/IN-en-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_c6d6616f-4478-4ac2-bdac-f54b444771dd_medium.jpg);
 
     /* background-color: black; */
     height: 100vh;
-    width: auto;
+    width: 100%;
     background-size:cover; 
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    flex-direction: column;
+
 }
 header::before{
     content: "";
@@ -136,21 +155,32 @@ header::before{
 .email-button button:hover{
     background-color: rgb(174, 0, 0);
 }
+main{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
 
 .page{
-    height: 70vh;
+    margin-top: 7px;
+
+    height: 90vh;
     width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: black;
     color: white;
-    border-top: 10px solid gray;
-    border-bottom: 10px solid gray;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* border-top: 10px solid gray;
+    border-bottom: 10px solid gray; */
+    gap: 100px;
 }
 .page-content{
-    width: 55%;
+    max-width: 650px;
 }
+
 .page h1{
     font-size: 3rem;
     font-weight: 700;
@@ -160,11 +190,27 @@ header::before{
     font-weight: 400;
 }
 .image{
-    height: 100%;
-    overflow: hidden;
+    height: 500px;
+    /* overflow: hidden; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .image img{
-    height: 400px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    height: auto;
+}
+
+.v1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 
@@ -174,10 +220,42 @@ header::before{
 
 /* --------------------------------samar area---------------------------------- */
 
-
-#footer{
+footer{
+    margin-top: 7px;
+    width: 100%;
+    /* height: 50vh; */
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: black;
+    
 }
+
 .footer_link{
-    color: gray;
+    
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+.Footer_div_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.Footer_div{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    /* gap: 15px; */
+}
+#footer p{
+color: rgba(255, 255, 255, 0.7);
+}
+.copy-right{
+    margin-top: 10px;
 }
