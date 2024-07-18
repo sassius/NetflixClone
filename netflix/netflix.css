@@ -96,3 +96,9 @@ header::before{
 .content h1{
     font-size: 3rem;
 }
+#footer{
+    background-color: black;
+}
+.footer_link{
+    color: gray;
+}
